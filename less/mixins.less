@@ -12,7 +12,25 @@
     line-height: 4rem;
 }
 
-.for-mobile {
+.for-mobile() {
     display: flex;
     flex-flow: column wrap;
+}
+
+.con-flow(@flex-dir, @just-con) {
+    display: flex;
+    flex-direction: @flex-dir;
+    justify-content: @just-con;
+}
+
+// Psuedo
+
+.spin(@color) {
+    &:hover {
+    cursor: pointer;
+    transform: rotateY(-360deg);
+    transition-duration: 1000ms;
+    color: @color;
+    }
+    
 }

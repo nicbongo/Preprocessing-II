@@ -6,24 +6,39 @@
     align-items: center;
     margin: 3% 0 0 0;
     padding: 3% 0;
-  
+    
+    @media @mobile {
+        .for-mobile();
+    }
+
     h1 {
         font-size: 3rem;
-        font-weight: bold;                 
+        font-weight: bold;  
+
+        .spin(red);
+        
+        @media @mobile {
+            font-size: 4rem;    
+        }               
     }
 
     .nav {
         width: 40%;
         display: flex;
         justify-content: space-around;
-        align-items: center;
-        
-
+        align-items: center;        
+      
         a {
             text-decoration: none;
             color: @shark;
             font-size:1.5rem;
             font-weight: bold;
+
+            @media @mobile {
+                font-size: 2rem;
+                margin: 2% 10%;
+    
+            }           
         }
      } // closes nav
  } // closes top

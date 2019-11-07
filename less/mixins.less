@@ -1,1 +1,18 @@
 // Mixins in here
+
+.custom-btn(@bord-rad){
+    display: block;
+    background-color: @eastern-blue;
+    margin: 5%;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: @bord-rad;
+    color: @white;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.for-mobile {
+    display: flex;
+    flex-flow: column wrap;
+}

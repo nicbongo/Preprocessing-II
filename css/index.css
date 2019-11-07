@@ -131,7 +131,6 @@ table {
   padding: 0;
   margin: 0;
   max-width: 100%;
-  border: 1px solid grey !important;
 }
 html {
   font-size: 62.5%;
@@ -177,9 +176,8 @@ img {
 .top {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px dashed #C0C0C0;
   align-items: center;
-  margin: 3% 0 0 0;
+  border-bottom: 2px dashed #C0C0C0;
   padding: 3% 0;
 }
 @media (max-width: 500px) {
@@ -191,6 +189,7 @@ img {
 .top h1 {
   font-size: 3rem;
   font-weight: bold;
+  margin: 0 0 0 5%;
 }
 .top h1:hover {
   cursor: pointer;
@@ -208,6 +207,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0 5% 0 0;
 }
 .top .nav a {
   text-decoration: none;

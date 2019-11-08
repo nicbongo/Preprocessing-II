@@ -1,1 +1,36 @@
 // Mixins in here
+
+.custom-btn(@bord-rad){
+    display: block;
+    background-color: @eastern-blue;
+    margin: 5%;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: @bord-rad;
+    color: @white;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.for-mobile() {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.con-flow(@flex-dir, @just-con) {
+    display: flex;
+    flex-direction: @flex-dir;
+    justify-content: @just-con;
+}
+
+// Psuedo
+
+.spin(@color) {
+    &:hover {
+    cursor: pointer;
+    transform: rotateY(-360deg);
+    transition-duration: 1000ms;
+    color: @color;
+    }
+    
+}
